@@ -601,6 +601,7 @@ const menuEl = document.getElementById("menu");
 const dropdownEl = document.getElementById("dropdown-menu");
 menuEl.addEventListener('click', ()=>{
     dropdownEl.classList.toggle('show');
+    menuEl.classList.toggle('larger');
 });
 
 },{}]},["3i5S3","n0lrN"], "n0lrN", "parcelRequire94c2")

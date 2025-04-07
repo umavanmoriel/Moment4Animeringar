@@ -2,6 +2,7 @@
 @use 'component';
 @use 'reset';
 @use 'layout';
+@use 'animering';
 
 
 
@@ -21,7 +22,7 @@
     }
 
     .header-list {
-        gap: 60px;
+        gap: 5px;
         @extend .header-style-desktop;
     }
 
@@ -85,7 +86,6 @@
             @extend .heading-style-desktop;
         }
     }
-
 
 }
 

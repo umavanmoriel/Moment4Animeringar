@@ -88,6 +88,7 @@ header {
 
 .header-list {
   flex-direction: row;
+  align-items: center;
   display: flex;
 }
 
@@ -96,6 +97,116 @@ footer {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.menu {
+  transition: transform .2s;
+}
+
+.menu.larger {
+  transform: scale(1.2);
+}
+
+@keyframes moonBling {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.moon-animation {
+  width: 100px;
+  animation-name: moonBling;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes earthRotateAroundSun {
+  from {
+    transform: rotate(270deg)translate(300px);
+  }
+
+  to {
+    transform: rotate(-270deg)translate(300px);
+  }
+}
+
+@keyframes saturnRotateAroundSun {
+  from {
+    transform: rotate(270deg)translate(300px);
+  }
+
+  to {
+    transform: rotate(-270deg)translate(300px);
+  }
+}
+
+.animation-container .sun {
+  width: 300px;
+}
+
+.animation-container .earth {
+  transform-origin: 100px;
+  z-index: -1;
+  width: 150px;
+  animation-name: earthRotateAroundSun;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.animation-container .saturn {
+  transform-origin: -100px;
+  z-index: -1;
+  width: 150px;
+  animation-name: saturnRotateAroundSun;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.h1-animation {
+  animation-name: blink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
 }
 
 @media (width >= 900px) {
@@ -113,7 +224,7 @@ footer {
   }
 
   .header-list {
-    gap: 60px;
+    gap: 5px;
   }
 
   .dropdown-menu.show {
