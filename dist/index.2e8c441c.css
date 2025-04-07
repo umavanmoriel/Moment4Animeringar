@@ -2,6 +2,7 @@
 body {
   color: #fff;
   background-color: #003;
+  height: 100vh;
 }
 
 @media (prefers-color-scheme: light) {
