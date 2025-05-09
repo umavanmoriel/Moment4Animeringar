@@ -8,6 +8,7 @@ body {
   background-color: $background-color-dark;
   color: $font-color-light;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: light) {
