@@ -1,8 +1,8 @@
-$background-color-dark: #000033;
-$background-color-light: white;
+$background-color-dark: #0f172a;
+$background-color-light: #f8fafc;
 
-$font-color-light: white;
-$font-color-dark: #000033;
+$font-color-light: #e2e8f0;
+$font-color-dark: #0f172a;
 
 body {
   background-color: $background-color-dark;
@@ -25,11 +25,11 @@ a {
 }
 
 
-$meny-color: #0000ff;
+$meny-color: #38bdf8;
 
-$light-meny-color: lighten($meny-color, 10%);
+$light-meny-color: lighten($meny-color, 12%);
 
-$darker-background-color: darken($background-color-dark, 5%);
+$darker-background-color: darken($background-color-dark, 4%);
 
 
 $heading-font: 'Roboto', Arial;
